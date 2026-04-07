@@ -1,0 +1,183 @@
+/* Logo specific styles */
+.hero__cobrand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero__cobrand-logo {
+  height: clamp(30px, 4vw, 55px);
+  width: auto;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.hero__powered-by--after-logo {
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  color: var(--marble);
+  opacity: 0.7;
+  margin: 0.5rem 0 0 0;
+  letter-spacing: 0.25em;
+  text-align: center;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: clamp(3rem, 13vw, 8.5rem);
+  letter-spacing: 0.04em;
+  margin-bottom: -0.5rem;
+  line-height: 1;
+  text-align: center;
+  gap: 0;
+}
+
+.hero__title-equi {
+  background: linear-gradient(90deg, #FEEB90 0%, #fff5c0 20%, #FEEB90 40%, #ae8f3c 60%, #FEEB90 80%, #fff5c0 100%);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 5s linear infinite;
+  animation-delay: 1.6s;
+}
+
+.hero__title-nox {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.hero__title-o {
+  height: 1.05em;
+  width: auto;
+  display: block;
+  align-self: center;
+  margin-top: -0.07em;
+  filter: drop-shadow(0 0 16px rgba(120, 170, 255, 0.5));
+}
+
+.hero__title__h2 {
+  font-size: clamp(1.2rem, 4vw, 3rem);
+  letter-spacing: 0.04em;
+  margin: 0.2rem 0 1rem 0;
+}
+
+/* Fullscreen Countdown Styles */
+.countdown-page {
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0B1120 0%, #0F1523 30%, #1A2238 50%, #2F3A55 70%, #3D4E6E 100%);
+  overflow: hidden;
+}
+
+.countdown-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 5vh, 4rem);
+  width: 100%;
+  margin-top: -12vh;
+  /* Additional lift */
+}
+
+.countdown-header {
+  transform: scale(1.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.countdown-subtitle {
+  font-family: var(--font-heading);
+  color: var(--marble);
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  letter-spacing: 0.4em;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.countdown-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2rem, 5vw, 6rem);
+  margin: 0;
+}
+
+.countdown-separator {
+  font-family: 'DSEG7 Classic', var(--font-heading);
+  font-size: clamp(3rem, 9vw, 11rem);
+  color: var(--gold-subtle);
+  opacity: 0.8;
+  margin-top: -3rem;
+  /* Lift slightly to center visually with digits */
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(140px, 18vw, 340px);
+  height: clamp(160px, 21vw, 360px);
+  border-radius: clamp(12px, 2vw, 32px);
+  background: rgba(15, 21, 35, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 2px solid rgba(201, 169, 110, 0.15);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.time-unit span {
+  font-family: 'DSEG7 Classic', monospace;
+  font-size: clamp(3rem, 7vw, 9rem);
+  color: white;
+  line-height: 1;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  margin-bottom: var(--space-xs);
+}
+
+.time-unit small {
+  font-family: var(--font-heading);
+  font-size: clamp(0.9rem, 2vw, 2.2rem);
+  color: var(--marble);
+  opacity: 0.9;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Footer Tagline */
+.countdown-footer-wrapper {
+  position: absolute;
+  bottom: clamp(2rem, 5vh, 4rem);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.countdown-footer {
+  display: inline-block;
+  font-family: var(--font-heading);
+  color: var(--gold-subtle);
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin: 0;
+}
