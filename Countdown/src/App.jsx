@@ -9,7 +9,7 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState({ h: 0, m: 0, s: 0 });
 
   useEffect(() => {
-    const target = new Date('2026-04-08T10:00:00').getTime();
+    const target = new Date('2026-04-09T10:00:00').getTime();
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
       const diff = target - now;
