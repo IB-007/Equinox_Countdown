@@ -53,7 +53,7 @@ export default function App() {
           </h2>
         </div>
 
-        <h3 className="countdown-subtitle fade-in-up" style={{ animationDelay: '0.2s' }}>TIME TILL REVIEW 2</h3>
+        <h3 className="countdown-subtitle fade-in-up" style={{ animationDelay: '0.2s' }}>TIME TILL REVIEW 3</h3>
 
         <div className="countdown-grid fade-in-up" style={{ animationDelay: '0.4s' }}>
           <TimeUnit value={timeLeft.h} label="HOURS" />
